@@ -1,0 +1,22 @@
+*** Djando ***
+Características:
+- Framework de Python
+- Diseño Rápido.
+- Filosofía DRY (Don’t Repeat Yourself) Reutlización de Código.
+- Patrón MTP (Model-Template-View).
+	Modelo: Manipula los Datos de la Aplicación que interactuá con la base de Datos.
+	Template: Decide cómo se muestran los datos en el navegador.
+	View: Decide cuáles datos se mostraran en el template.
+- Ejemplo:
+1. Se hace una Petición del Navegador a la URL.
+2. URL manda la petición a la vista configurada.
+3. La vista le hará la petición del modelo (enviá o solicita datos)
+4. El modelo interactuá con la base de datos (ingresa o extrae datos)
+5. La Base de datos responde al modelo y este enviá dicha respuesta a la vista
+6. La vista muestra la información al Template el cual se renderizara en nuestro navegador
+
+ 
+   Petición -----> View ----->  Model < = = = > Base de datos
+                   |  ^           |      
+       Template <--'  '-----------'    
+ (Muestra en Navegador)	
